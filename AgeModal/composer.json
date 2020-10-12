@@ -1,0 +1,24 @@
+{
+  "name": "swag/plugin-age-modal",
+  "description": "Age modal",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AgeModal\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Exploeco",
+      "role": "Manufacturer"
+    }
+  ],
+  "extra": {
+    "shopware-plugin-class": "AgeModal\\AgeModal",
+    "label": {
+      "de-DE": "Age modal",
+      "en-GB": "Age modal"
+    }
+  }
+}

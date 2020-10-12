@@ -1,0 +1,21 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_pseudo_modal %}
+    {{ parent() }}
+
+    <div class="age-modal modal fade show" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="age-modal-dialog modal-dialog">
+            <div class="age-modal-content modal-content">
+                <div class="age-modal-body modal-body">
+                    <h2 class="age-modal-heading">Altersprüfung</h2>
+                    <div class="age-modal-logo-wrapper">
+                        <img class="age-modal-logo" src="{{ shopware.theme['sw-logo-desktop'] |sw_encode_url }}" class="img-fluid header-logo-main-img"/>
+                    </div>
+                    <p class="age-modal-message">Um unseren Shop {{ shopware.config.core.basicInformation.shopName }} besuchen zu dürfen, müssen Sie mindestens 18 Jahre alt sein. Bitte bestätigen Sie Ihr Alter.</p>
+                    <button class="age-modal-button btn btn-secondary">Ich bin 18+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template data-age-modal></template>
+{% endblock %}
